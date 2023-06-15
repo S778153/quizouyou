@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <script src="quiz.js"></script>
+  <title>推理クイズ</title>
+</head>
+
+<body>
+  <div class="quizzes-container">
+    <h1>推理クイズ</h1>
+    <div class="quiz-container0">
+      <h2>第1問</h2>
+      目安時間:30秒
+      <div class="img0" id="img0">
+        <p><img src="q/image0.jpg"></p>
+      </div>
+      <form id="quiz-1">
+        <input name="answer" type="radio" value="a">赤</input>
+        <input name="answer" type="radio" value="b">橙</input>
+        <input name="answer" type="radio" value="c">緑</input>
+        <input name="answer" type="radio" value="d">青</input>
+        <input name="answer" type="radio" value="e">桃</input>
+        <input name="answer" type="radio" value="f">黄</input>
+      </form>
+      <button class="btn" type="button" onclick="answerQuiz1();">確定</button>
+    </div>
+    <div class="quiz-container">
+      <h2>第2問</h2>
+      目安時間:30秒
+      <div class="img0" id="img0">
+        <p><img src="q/image1.jpg"></p>
+      </div>
+      <form id="quiz-2">
+        <input name="answer" type="radio" value="a">A</input>
+        <input name="answer" type="radio" value="b">B</input>
+        <input name="answer" type="radio" value="c">C</input>
+      </form>
+      <button class="btn" type="button" onclick="answerQuiz2();">確定</button>
+    </div>
+    <div class="quiz-container">
+      <h2>第3問</h2>
+      目安時間:30秒
+      <div class="img0" id="img0">
+        <p><img src="q/image2.jpg"></p>
+      </div>
+      <form id="quiz-3">
+        <input name="answer" type="radio" value="a">A</input>
+        <input name="answer" type="radio" value="b">B</input>
+        <input name="answer" type="radio" value="c">C</input>
+        <input name="answer" type="radio" value="d">D</input>
+      </form>
+      <button class="btn" type="button" onclick="answerQuiz3();">確定</button>
+    </div>
+    <div id="score-container">
+      <p id="score-message"></p>
+    </div>
+    <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
+  </div>
+  <div>
+    <input type="checkbox" id="yasi-toggle" class="yasi-toggle">
+    <label for="yasi-toggle" class="yasi-button"></label>
+    <ul class="hidden-content">
+      <div id="kotae" class="kotae">
+      1問目の答え。。本当のことが書かれている箱は一つであるはずなのに、「緑の箱はあたり」という箱が二つあるため、緑の箱は外れとわかる。<br>
+      よって、「緑の箱はハズレ」と書いてある”赤の箱があたり”である。<br>
+      <p>
+      2問目の答え。。もしもAのグラスに本当のことが書かれている場合、BのグラスとCのグラスに矛盾が起きてしまうのでAのグラスが嘘であるとわかる。<br>
+      次にCのグラスに本当のことが書かれている場合、Aのグラスに書いてある「Bに解毒剤は入ってない」というのが矛盾してしまうので嘘であるとわかる。<br>
+      よって、答えは”Bのグラス”である。<br>
+      </p>
+      3問目の答え。。Aさんが犯人だった場合、犯人が二人になってしまうのでAさんは犯人ではない。<br>
+      次にBさんは犯人だった場合、嘘をつかなければならないにも関わらず自分で犯人と言ってしまっているので犯人はBさんではない。<br>
+      そして、Dさんが犯人だった場合「Cは犯人じゃない、犯人は他にいる。」というのが嘘となってしまい、Cも犯人になってしまうため犯人が二人になってしまうことから犯人はDさんでもない。<br>
+      よって、答えは”cさん”である。
+      </div>
+    </ul>
+  </div>
+</body>
