@@ -1,0 +1,81 @@
+.kotae{
+  margin: auto;
+  max-width: 715px;
+  text-align: left;
+}
+body {
+  text-align: center;
+}
+
+img{
+  width: 100%;
+}
+
+
+.quizzes-container {
+  width: 400px;
+  margin: 50px auto;
+}
+
+.quiz-container {
+  padding-bottom: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  background-color: white;
+}
+
+#score-container {
+  border: 1px solid black;
+  height: 50px;
+}
+
+.btn-score {
+  display: block;
+  margin: 20px auto;
+  background-color: white;
+}
+
+
+
+.yasi-toggle,
+.hidden-content {
+  display: none;
+}
+
+.yasi-toggle:checked ~ .hidden-content {
+  display: block;
+}
+
+.yasi-button {
+  display: inline-block;
+  width: 200px;
+  height: 40px;
+  padding: 8px;
+  background-color: #dbdbdb;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 24px;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.3s;
+}
+
+.yasi-button::before {
+  content: '答え';
+}
+
+.yasi-toggle:checked ~ .more-button::before {
+  content: '閉じる';
+}
+
+.yasi-button:hover {
+  opacity: 0.7;
+}
+
+.yasi-button:active {
+  opacity: 0.4;
+}
+
