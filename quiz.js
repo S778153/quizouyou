@@ -28,7 +28,7 @@ function answerQuiz1() {
   const select = '1問目：' + quiz_1.answer.value + 'を選択しました';
 
   if (quiz_1.answer.value == 'a') {
-    score++;
+    score = score + 5;
   }
 }
 
@@ -38,7 +38,7 @@ function answerQuiz2() {
 
   // 正解はB
   if (quiz_2.answer.value == 'b') {
-    score++;
+    score = score + 5;
     }
 }
 
@@ -47,6 +47,6 @@ function answerQuiz3() {
   const select = '3問目：' + quiz_3.answer.value + 'を選択しました';
 
   if (quiz_3.answer.value == 'c') {
-    score++;
+    score = score + 5;
     }
 }
