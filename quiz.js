@@ -6,9 +6,9 @@ function showScore() {
   if (score === 15) {
     totalScore.innerHTML = score + "点：満点"
   } else if (score === 10) {
-    totalScore.innerHTML = score + "点";
+    totalScore.innerHTML = score + "点：2問正解";
   } else if (score === 5) {
-    totalScore.innerHTML = score + "点";
+    totalScore.innerHTML = score + "点：1問正解";
   } else {
     totalScore.innerHTML = score + "点：残念";
   }
@@ -31,7 +31,6 @@ function answerQuiz1() {
     score = score + 5;
   }
 }
-
 function answerQuiz2() {
   const quiz_2 = document.getElementById('quiz-2');
   const select = '2問目：' + quiz_2.answer.value + 'を選択しました';
@@ -39,7 +38,7 @@ function answerQuiz2() {
   // 正解はB
   if (quiz_2.answer.value == 'b') {
     score = score + 5;
-    }
+  }
 }
 
 function answerQuiz3() {
@@ -48,5 +47,5 @@ function answerQuiz3() {
 
   if (quiz_3.answer.value == 'c') {
     score = score + 5;
-    }
+  }
 }
