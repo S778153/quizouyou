@@ -24,10 +24,8 @@
         <input name="answer" type="radio" value="e">桃</input>
         <input name="answer" type="radio" value="f">黄</input>
       </form>
-       <input class="btn" type="button"
-       value="確定"
-       onclick="disabled = true;answerQuiz1();">
     </div>
+    <p><hr></p>
     <div class="quiz-container">
       <h2>第2問</h2>
       ポイント:5点
@@ -39,11 +37,9 @@
         <input name="answer" type="radio" value="b">B</input>
         <input name="answer" type="radio" value="c">C</input>
       </form>
-       <input class="btn" type="button"
-       value="確定"
-       onclick="disabled = true;answerQuiz2();">
     </div>
     <div class="quiz-container">
+      <hr>
       <h2>第3問</h2>
       ポイント:5点
       <div class="img0" id="img0">
@@ -55,14 +51,11 @@
         <input name="answer" type="radio" value="c">C</input>
         <input name="answer" type="radio" value="d">D</input>
       </form>
-       <input class="btn" type="button"
-       value="確定"
-       onclick="disabled = true;answerQuiz3();">
     </div>
     <div id="score-container">
       <p id="score-message"></p>
     </div>
-    <button class="btn-score" type="button" onclick="showScore();">合計得点を見る</button>
+    <button class="btn-score" type="button" onclick="disabled = true;answerQuiz1();answerQuiz2();answerQuiz3();showScore();">合計得点を見る</button>
   </div>
   <div>
     <input type="checkbox" id="yasi-toggle" class="yasi-toggle">
