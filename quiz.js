@@ -3,11 +3,11 @@ let score = 0;
 function showScore() {
   const totalScore = document.getElementById('score-message');
 
-  if (score === 3) {
+  if (score === 15) {
     totalScore.innerHTML = score + "点：満点"
-  } else if (score === 2) {
+  } else if (score === 10) {
     totalScore.innerHTML = score + "点";
-  } else if (score === 1) {
+  } else if (score === 5) {
     totalScore.innerHTML = score + "点";
   } else {
     totalScore.innerHTML = score + "点：残念";
